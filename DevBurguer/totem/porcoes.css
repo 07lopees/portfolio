@@ -1,0 +1,380 @@
+.porcoeslanches{
+    position: absolute;
+    left: 450px;
+    
+    }
+    
+    
+    
+    
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr); /* Duas colunas de tamanho igual */
+        gap: 1px; /* Espaço entre os itens */
+    }
+    
+    .item {
+        margin:30px;
+        height: 200px;
+        width: 200px;
+        background-color: rgba(204, 204, 204, 0.486);
+        border: rgb(94, 93, 93) solid 0px;
+        box-shadow: 
+        10px 10px 15px rgba(0, 0, 0, 0.2),
+        20px 20px 30px rgba(0, 0, 0, 0.15),
+        30px 30px 60px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center;
+        font-size: 20px;
+        
+    
+    }
+    
+    .p1{
+       padding-top: 110px;
+       font-family: Stencil Std, fantasy;
+       letter-spacing: 1.2px;
+    
+    }
+    .preco{
+        border-radius: 10px;
+        justify-self: center;
+        height: 25PX;
+        width: 85px;
+        background-color: rgba(0, 128, 0, 0.479);
+        font-family: Jazz LET, fantasy;
+    }
+     /* Modal (tela branca que aparece ao clicar em um item) */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .modal-content {
+        background: white;
+        width: 50%;
+        height: 50%;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .close-modal {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    
+    .imaLanche1{
+        width: 100px;
+        height: 100px;
+        display: block;
+        border-radius: 10px;
+        transform: translateX(52px) translateY(10px);
+        position: absolute;
+    
+    }.imaLanche2{
+        width: 100px;
+        height: 100px;
+        display: block;
+        border-radius: 10px;
+        transform: translateX(52px) translateY(10px);
+        position: absolute;
+    
+    }.imaLanche3{
+        width: 100px;
+        height: 100px;
+        display: block;
+        border-radius: 10px;
+        transform: translateX(42px) translateY(10px);
+        position: absolute;
+    
+    }
+    
+    
+    .h1devburguer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    animation: letra 2s infinite alternate;
+}
+
+    
+    
+    
+    
+    
+    
+    
+    footer {
+        background-color: rgba(167, 167, 167, 0.829); /* Transparência no fundo */
+        color: rgb(0, 0, 0);
+        width: 100%;
+        position: fixed; /* Fixa o footer no final da página */
+        bottom: 0; /* Fixar no fundo */
+        left: 0;
+        z-index: 1; /* Garante que o footer fique acima de outros elementos */
+      margin-left: 230px;
+    }
+    
+    /* Container do footer */
+    .footer-container {
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    /* Navegação Lateral (fixa) */
+    .footer-left {
+        position: fixed; /* Fixa a navegação lateral */
+        top: 0;
+        left: 0;
+        height: 100vh; /* Ocupa toda a altura da tela */
+        width: 200px; /* Largura fixa para a navegação lateral */
+        background-color: rgba(167, 167, 167, 0.829); 
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-right: 30px;
+    }
+    
+    .footer-bottom {
+        margin: 0px 210px;
+        padding: 20px;
+        padding-left: 330px;
+    }
+    
+    .footer-input {
+        margin: 0px 10px;
+        padding: 30px;
+        size: 20px;
+        position: absolute;
+        transform: translateY(-20px);
+    }
+    
+    .finalizarBotao {
+        background-color: rgb(204, 5, 5); /* Vermelho padrão */
+        height: 70px;
+        width: 200px;
+        padding: 20px;
+        border-radius: 50px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        font-family: impact, fantasy;
+        font-weight: 100;
+        letter-spacing: 1px;
+        display: block;
+        margin-left:-250px ;
+    }
+    
+    .finalizarBotao:active {
+        background-color: rgb(0, 255, 0); 
+        box-shadow: 0px 6px 15px rgba(3, 255, 3, 0.8);
+        transform: translateX(-5px) translateY(-5px);
+        letter-spacing: 10px;
+        color: black;
+    }
+    
+    .footer-preco {
+        margin: 0px 10px;
+        padding: 30px;
+        border-radius: 10px;
+        position: absolute;
+        left: 70%;
+        transform: translateY(-20px);
+    }
+    
+    .boasvindas {
+        border-radius: 20px;
+        background-color: rgb(0, 0, 0);
+        border: rgba(255, 255, 255, 0.849) solid 3px;
+        color: black;
+        font-size: 20px;
+        padding-top: 10px;
+        transform: translateX(-10px);
+        width: 187px;
+        height: 90px;
+        justify-content: center;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .escolhaLetras {
+        font-size: 19px;
+        top: 150px;
+        padding-left: 37px;
+        color: black;
+        font-family: 'Fredoka One', cursive;
+    }
+    
+    .boasvindas-devburguer {
+        font-size: 30px;
+    }
+    
+    .inputss {
+        border-radius: 5px;
+        padding: 10px;
+        transform: translateY(-20px) translateX(-170px);
+        
+    }
+    .inputssL {
+        
+        
+        transform: translateY(-8px) translateX(-170px);
+        
+    }
+    
+    .h1devburguer {
+        color: rgb(255, 255, 255);
+        animation: letra 2s infinite alternate;
+    }
+    
+    .sobremesa {
+        font-size: 19px;
+        top: 150px;
+        padding-left: 25px;
+        color: black;
+        font-family: 'Fredoka One', cursive;
+    }
+    /**
+    @keyframes letra {
+        0% {
+            color: rgb(0, 119, 255);
+        }
+        50% {
+            color: rgb(0, 211, 0);
+        }
+        100% {
+            color: rgb(255, 0, 191);
+        }
+    }
+    **/
+    .imgLeft {
+        width: 90px;
+        height: auto;
+        display: block;
+        transform: translateX(32px) translateY(20px);
+        border-radius: 10px;
+    }
+    
+    .escolhas {
+        background-color: rgba(255, 255, 255, 0.596);
+        border: rgba(94, 93, 93, 0.425) solid 5px;
+        border-radius: 10px;
+    }
+    .logo{
+    width: 45%;
+    height: 45%;
+    padding-left: 590px;
+    transform: translateY(-50px);
+    }
+    
+    
+    @keyframes neon {
+        0% { border-color: rgb(255, 0, 0); box-shadow: 0 0 10px rgb(189, 0, 0); }
+        50% { border-color: rgb(214, 0, 0); box-shadow: 0 0 20px rgb(185, 0, 0); }
+        100% { border-color: rgb(194, 0, 0); box-shadow: 0 0 10px rgb(255, 0, 0); }
+    
+    }
+    
+    .selecionado{
+        background-color: rgba(255, 0, 0, 0.3);
+        border: rgba(255, 255, 255, 0.733) solid 5px;
+        border-radius: 10px;
+        animation: neon 1.5s infinite alternate;
+    
+        
+    }
+    
+    
+    
+    
+    
+    
+    /* Responsividade para tablets */
+    @media screen and (max-width: 1024px) {
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .footer-left {
+            position: relative;
+            width: 100%;
+            height: auto;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+    
+        .footer-left nav ul {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .footer-left nav ul li {
+            margin: 5px 15px;
+        }
+    
+        .finalizarBotao {
+            width: 250px; /* Ajusta o tamanho do botão */
+            margin: 0 auto;
+            padding: 20px;
+            font-size: 18px;
+            display: block;
+        }
+    
+        .footer-bottom {
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        .footer-preco {
+            position: relative;
+            left: 0;
+            transform: none; /* Remove o transform para adaptação */
+            margin-top: 10px;
+        }
+    }
+    
+    /* Responsividade para telas menores, como smartphones */
+    @media screen and (max-width: 768px) {
+        .footer-bottom {
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .finalizarBotao {
+            width: 100%; /* Faz o botão ocupar toda a largura */
+            margin: 10px auto; /* Centraliza o botão */
+            padding: 20px;
+            font-size: 18px;
+        }
+    
+        .footer-preco {
+            width: 100%; /* Faz o preço ocupar toda a largura */
+            position: relative;
+            left: 0;
+            transform: none;
+            margin-top: 20px;
+        }
+    }
+    

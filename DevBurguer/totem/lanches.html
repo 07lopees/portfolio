@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVBURGUER</title>
+    <link rel="stylesheet" href="./lanches.css">
+</head>
+<body>
+    <div>
+        <div class="content"></div>
+        <footer>
+            <div class="footer-container">
+                
+                <div class="footer-left">
+                    <nav>
+                        <ul>
+                            <div class="boasvindas">
+                             <a href="./inicio.html">
+                                    <p class="h1devburguer">DevBurguer</p>
+
+                                </a>
+                            </div>
+                            <a href="./lanches.css">
+                                <div class="selecionado">
+                                    <img src="./img/hamburguerKiloByte(KB).webp" alt="" class="imgLeft">
+                                    <p class="escolhaLetras">Lanches</p>
+                                </div>
+                            </a>
+                            <a href="./porcoes.html">
+                                <div class="escolhas">
+                                    <img src="./img/porcao.jpg" alt="" class="imgLeft">
+                                    <p class="escolhaLetras">Porções</p>
+                                </div>
+                            </a>
+                            <a href="./bebidas.html">
+                                <div class="escolhas">
+                                    <img src="./img/refrigerantes.jpg" alt="" class="imgLeft">
+                                    <p class="escolhaLetras">Bebidas</p>
+                                </div>
+                            </a>
+                            <a href="./combos.html">
+                                <div class="escolhas">
+                                    <img src="./img/combos e descontos.jpg" alt="" class="imgLeft">
+                                    <p class="escolhaLetras">Combos</p>
+                                </div>
+                            </a>
+                            <a href="./sobremesas.html">
+                                <div class="escolhas">
+                                    <img src="./img/sobremesas.jpg" alt="" class="imgLeft">
+                                    <p class="sobremesa">Sobremesas</p>
+                                </div>
+                            </a>
+                            <br>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Área para a sacola de compras -->
+                <div class="footer-input">
+                    <center>
+                        <h3 class="inputssM">Sacola de Compras</h3>
+                    </center>
+                    <input type="text" class="inputsm" id="cart-input" readonly placeholder="Itens na sacola">
+                </div>
+
+                <div class="footer-bottom">
+                    <a href="./nomeCliente.html">
+                        <button class="finalizarBotao">FINALIZAR</button>
+                    </a>
+                </div>
+
+                <!-- Área para mostrar o preço total -->
+                <div class="footer-preco">
+                    <center>
+                        <h3 class="inputssL">Preço</h3>
+                    </center>
+                    <!-- Input para exibir o preço total -->
+                    <input type="text" class="inputss" id="cart-total-input" readonly placeholder="Preço total">
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- Lista de hambúrgueres -->
+    <div class="hamburgueslanches">
+        <div class="container">
+            <div class="item" data-id="1">
+                <img src="./img/kiloBytesurguer.jpg" alt="" class="imaLanche1">
+                <p class="p1">KiloBytesBurguer</p>
+                <p class="preco">R$ 15,90</p>
+            </div>
+            <div class="item" data-id="2">
+                <img src="./img/megabyteBurguer.jpg" alt="" class="imaLanche2">
+                <p class="p1">MegaBytesBurguer</p>
+                <p class="preco">R$ 24,90</p>
+            </div>
+            <div class="item" data-id="3">
+                <img src="./img/GigaBytesBurguer.jpg" alt="" class="imaLanche3">
+                <p class="p1">GigaBytesBurguer</p>
+                <p class="preco">R$ 57,90</p>
+            </div>
+            <div class="item" data-id="4">
+                <img src="./img/TeraBytesBurguer.jpg" alt="" class="imaLanche4">
+                <p class="p1">TeraBytesBurguer</p>
+                <p class="preco">R$ 75,90</p>
+            </div>
+            <div class="item" data-id="5">
+                <img src="./img/PetabyteBurguer.jpg" alt="" class="imaLanche5">
+                <p class="p1">PetaBytesBurguer</p>
+                <p class="preco">R$ 89,90</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Personalização -->
+    <div class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="burger-name"></h2>
+            <p id="burger-price"></p>
+            <h3>Ingredientes:</h3>
+            <ul id="burger-ingredients"></ul>
+            <h3>Adicionar/Remover Ingredientes</h3>
+            <div id="extra-options" class="extras-container"></div>
+            <p>Total: <span id="total-price"></span></p>
+            <button id="add-to-cart">Adicionar à Sacola</button>
+        </div>
+    </div>
+
+    <script src="./lanches.js" defer></script>
+</body>
+</html>
