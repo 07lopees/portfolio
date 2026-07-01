@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treino de Códigos</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Treino de Códigos 📚</h1>
+
+<select id="modo">
+    <option value="nome">Mostrar Nome</option>
+    <option value="codigo">Mostrar Código</option>
+</select>
+
+<div class="card" id="pergunta">
+    Clique em Reiniciar
+</div>
+
+<input
+    type="text"
+    id="resposta"
+    placeholder="Digite sua resposta"
+/>
+
+<button class="verificar" onclick="verificar()">
+Verificar
+</button>
+
+<button class="proximo" onclick="proximo()">
+Próximo
+</button>
+
+<button class="reiniciar" onclick="iniciarProva()">
+Reiniciar Prova
+</button>
+
+<div id="resultado"></div>
+
+<div id="placar">
+Acertos: 0 | Erros: 0
+</div>
+
+</div>
+<br>
+
+
+    <div class="saida">
+        <a href="https://07lopees.github.io/portfolio/">
+            <button class="bntSaida">Voltar para portfólio</button>
+        </a>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

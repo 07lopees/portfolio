@@ -1,0 +1,117 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+select, input, button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 35px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    background: #2196F3;
+    color: white;
+    border-radius: 12px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.verificar {
+    background: #4CAF50;
+    color: white;
+}
+
+.proximo {
+    background: #2196F3;
+    color: white;
+}
+
+#resultado {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.saida{
+     position: absolute;
+    top: 70%;
+    left: 77%;
+padding: 100px;
+background-color: transparent;
+
+}
+.bntSaida{
+     position: absolute;
+    color:white;
+background-color: rgb(151, 0, 0);
+  border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+           position: absolute;
+        font-size: 22px;
+    }
+
+    .card {
+           position: absolute;
+        font-size: 22px;
+        padding: 30px 15px;
+    }
+    .saida{
+     position: absolute;
+    top: 80%;
+    left: 37%;
+padding: 100px;
+background-color: transparent;
+
+}
+.bntSaida{
+     position: absolute;
+    color:white;
+background-color: rgb(151, 0, 0);
+  border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+}
