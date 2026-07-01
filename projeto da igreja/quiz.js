@@ -178,7 +178,7 @@ function showResult(){
     timerBar.style.width = "0%";
 
     document.getElementById("restart-btn").addEventListener("click", () => {
-        window.location.href = "index.html";
+        window.location.href = "https://07lopees.github.io/portfolio/";
     });
 }
 startQuiz();
